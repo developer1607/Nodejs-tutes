@@ -15,7 +15,4 @@ const items = [1, [2, [3, [4]]]];
 const newItems = _.flattenDeep(items);
 
 console.log(newItems);
-<<<<<<< HEAD
 log('Hello Run');
-=======
->>>>>>> 58f3c22b428476ea1f5a35e8a4cd4d91b9a5dbdf
