@@ -1,18 +1,13 @@
-// NPM Global command, comes with node
-// NPM --version
+// Event   log
 
-// Local dependency - use it only in this particular products
-// npm i <packageName>
+console.log("first task")
+console.time()
+for (let i=0;i<100000;i++){
+    // some code
+    const h3 = document.querySelector('h3')
+    h3.textContent = `Hey everyone is waiting for me`
+}
 
-// Global dependency - use it in any projects
-// npm install -g <packageName>
-// sudo install -g <packageName>
+console.timeEnd()
 
-const { log } = require('console');
-const _ = require('lodash');
-
-const items = [1, [2, [3, [4]]]];
-const newItems = _.flattenDeep(items);
-
-console.log(newItems);
-log('Hello Run');
+console.log("Next Task ");
